@@ -20,9 +20,9 @@ jobs:
       - checkout
       - python/install-packages:
           pkg-manager: pip
-      - run:
-          name: Run pylint
-          command: pylint openapi_server
+      # - run:
+      #     name: Run pylint
+      #     command: pylint openapi_server
       - run:
           name: Run tests
           command: pytest
